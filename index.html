@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>หน้าแรกของฉัน</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header><h1>สวัสดีครับ ผมชื่อพงษ์สวัสดิ์</h1></header>
+  <header>
+    <div class="container">
+      <h1>พงษ์สวัสดิ์</h1>
+      <nav>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
-    <h2>เกี่ยวกับฉัน</h2>
-    <p>ผมทำงานที่ อบต.คำนาดี ร้อยเอ็ด สนใจเทคโนโลยี เว็บไซต์ และ Google Apps Script</p>
+    <section id="about">
+      <h2>เกี่ยวกับฉัน</h2>
+      <p>
+        ผมทำงานที่ อบต.คำนาดี จังหวัดร้อยเอ็ด สนใจการเขียนเว็บไซต์ Google Apps Script
+        และเทคโนโลยีเพื่อการบริการสาธารณะ
+      </p>
+    </section>
 
-    <h2>ติดต่อ</h2>
-    <p>📧 your@email.com<br>📱 08x-xxx-xxxx</p>
-  </main>
-
-  <footer>&copy; 2025 PongsaWat Sappasorn</footer>
-</body>
-</html>
+    <section id="skills">
+      <h2>ทักษะ</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>Google Apps Script</li>
+        <li>ออกแบบด้วย Canva</li>
+      </ul>
